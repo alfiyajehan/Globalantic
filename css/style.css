@@ -1,0 +1,21 @@
+/* adding google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* locomotive css cdn */
+@import 'node_modules/locomotive-scroll/dist/locomotive-scroll';
+
+
+@font-face {
+    font-family: jakarta;
+    src: url('../fonts/PlusJakartaSans-VariableFont_wght.ttf');
+}
+
+input.no-spinner::-webkit-outer-spin-button,
+input.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input.no-spinner {
+  -moz-appearance: textfield; 
+}
