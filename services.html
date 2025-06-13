@@ -25,7 +25,7 @@
                     Globalantic
                 </h1>
 
-                <div class="text-lg font-semibold flex gap-4">
+                <div class="text-lg font-semibold flex gap-7">
                     <a href="/index.html">Home</a>
                     <a href="/about.html">About</a>
                     <a href="/pricing.html">Pricing</a>
@@ -35,13 +35,15 @@
                     <a href="/contact.html">Contact</a>
                 </div>
 
-                <button class="px-4 py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex  items-center justify-center gap-2">
-                    Free Consultation
-                    <div class="w-7 h-7 bg-white rounded-full p-1">
+                <button class="py-1 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-4 cursor-pointer align-middle text-md transition-all duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
+                    <span class="text-lg pl-4">
+                        Free Consulation
+                    </span>
+                    <div class="w-11 h-11 bg-white rounded-full p-1 flex justify-center items-center mr-1">
                         <img src="./images/arrow.png" alt="">
                     </div>
                 </button>
-            </nav> 
+            </nav>
         
         </div>
 
@@ -96,7 +98,7 @@
                         CREATIVE APPROACH
                     </h2>
 
-                    <h1 class="text-6xl font-semibold">
+                    <h1 class="text-6xl font-bold text-[#293349]">
                         We are here to grow your business.
                     </h1>
 
@@ -120,28 +122,30 @@
                 </div>
             </div>
 
-            <div class="flex flex-col justify-center items-center w-full gap-10 px-10   ">
+            <div class="flex flex-col justify-center items-center w-full gap-10 px-10 ">
                 <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-6 py-2 w-fit text-xl font-semibold ">
                     CREATIVE APPROACH
                 </h2>
 
-                <h1 class="text-6xl font-semibold">Our Services</h1>
+                <h1 class="text-6xl font-bold text-[#293349]">Our Services</h1>
 
-                <div class="w-full flex  justify-center gap-20 pt-10">
-                    <div class="w-[30%] flex flex-col gap-5 rounded-2xl shadow-md">
-                        <img class="h-[50%] " src="./images/article1.png" alt="">
+                <div class="w-full flex justify-center gap-20 pt-10">
+                    <div class="relative w-[30%] flex flex-col gap-5 rounded-2xl shadow-md overflow-hidden">
+                        <img class="h-[50%]" src="./images/article1.png" alt="">
 
-                        <div class="w-full h-[60%] px-12 flex flex-col gap-6 py-6 justify-center items-center">
-                            <h2 class="text-2xl font-semibold text-center">
-                                Web Development
-                            </h2>
-                            <p class="text-[1.15vw] text-center">
-                                Lorem ipsum dolor consectetur adipiscing 
-                            </p>
-                        </div>
+                        <div class="absolute bottom-0 h-[50%] hover:h-[60%] transition-all ease-in duration-75 cursor-pointer bg-white hover:bg-[#7B16EC] hover:text-white">
+                            <div class="w-full bottom-0 h-[70%] px-12 flex flex-col gap-6 py-6 justify-center items-center">
+                                <h2 class="text-2xl font-semibold text-center">
+                                    Web Development
+                                </h2>
+                                <p class="text-[1.15vw] text-center">
+                                    Lorem ipsum dolor consectetur adipiscing 
+                                </p>
+                            </div>
 
-                        <div class="flex justify-center items-center py-6 border-t-1 gap-3 text-xl">
-                            Explore more <img src="./images/arrow-right.png" alt="">
+                            <div class="flex justify-center items-center py-7 border-t-1 gap-3 text-xl">
+                                Explore more <img src="./images/arrow-right.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="w-[30%] flex flex-col gap-5 rounded-2xl shadow-md">
@@ -188,17 +192,40 @@
                 </h2>
             </div>
 
-            <div class="flex">
-                <div>
+            <div class="flex justify-between pt-20 items-center">
+                <div class="relative pl-10">
                     <img src="./images/ayush-rounded.png" alt="">
+                    <img class="absolute -bottom-2 left-0" src="./images/que-mark.png" alt="">
                 </div>
-                <div>
-                    <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-6 py-2 w-fit text-xl font-semibold">
+                <div class="w-1/2 flex flex-col gap-10">
+                    <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-6 py-2 text-xl font-semibold w-60">
                         FAQ
                     </h2>
-                    <h1>
+                    <h1 class="text-6xl  font-bold text-[#293349]">
                         Some answers that clear your doubts
                     </h1>
+
+                    <div class="questions pr-28 flex flex-col gap-2">
+                        <details class="qna bg-[#7B16EC33] flex flex-col justify-center rounded-lg px-6 py-4 gap-2 text-xl cursor-pointer">
+                            <summary >What we are ?</summary>
+                            <p class="ans text-zinc-500">
+                                We are an agency that only works for you business growth.
+                            </p>
+                        </details>
+                        <details class="qna bg-[#7B16EC33] flex flex-col justify-center rounded-lg px-6 py-4 gap-2 text-xl cursor-pointer">
+                            <summary>What we do for you ?</summary>
+                            <p class="ans text-zinc-500">
+                                We are an agency that only works for you business growth.
+                            </p>
+                        </details>
+                        <details class="qna bg-[#7B16EC33] flex flex-col justify-center rounded-lg px-6 py-4 gap-2 text-xl cursor-pointer">
+                            <summary>What is the owner of our agency ?</summary>
+                            <p class="ans text-zinc-500">
+                                We are an agency that only works for you business growth.
+                            </p>
+                        </details>
+                        
+                    </div>
 
                     
 
@@ -221,23 +248,26 @@
             <div class="flex justify-between items-center">
                 <div class="flex flex-col gap-3">
                     <h2 class="text-4xl font-semibold mb-2">Quick Links</h2>
-                    <a class="text-lg font-light tracking-wide" href="">Home</a>
-                    <a class="text-lg font-light tracking-wide" href="">About</a>
-                    <a class="text-lg font-light tracking-wide" href="">Industries</a>
-                    <a class="text-lg font-light tracking-wide" href="">Services</a>
-                    <a class="text-lg font-light tracking-wide" href="">Career</a>
-                    <a class="text-lg font-light tracking-wide" href="">Contact</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/index.html">Home</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/about.html">About</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">Industries</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/services.html">Services</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">Career</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/contact.html">Contact</a>
                 </div>
-                <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-3 w-1/5">
                     <h2 class="text-4xl font-semibold mb-2">Services</h2>
-                    <a class="text-lg font-light tracking-wide" href="">Website Development</a>
-                    <a class="text-lg font-light tracking-wide" href="">CRM</a>
-                    <a class="text-lg font-light tracking-wide" href="">AI Automation</a>
-                    <a class="text-lg font-light tracking-wide" href="">Social Media Management</a>
-                    <a class="text-lg font-light tracking-wide" href="">SEO</a>
-                    <a class="text-lg font-light tracking-wide" href="">Designing</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/webdev.html">Website Development</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">CRM</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">AI Automation</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">Social Media Management</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">SEO</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">Designing</a>
                 </div>
-                <img class="w-1/4" src="./images/bot.png" alt="">
+                <div class="w-1/4 relative">
+                    <img class="w-full" src="./images/home-bot.png" alt="">
+                    <img class="w-24 absolute left-0 top-14 custom-spin" src="./images/bot-ball.png" alt="">
+                </div>
             </div>
             <div class="flex justify-center mt-4 items-center py-8 text-lg text-zinc-300">
                 @ Copyright  2025, Globalantic -Services & Products

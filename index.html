@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Globalantic</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+
     <link rel="stylesheet" href="./css/style.css">
     
     <!-- tailwindcss -->
@@ -25,7 +27,7 @@
                     Globalantic
                 </h1>
 
-                <div class="text-lg font-semibold flex gap-4">
+                <div class="text-lg font-semibold flex gap-7">
                     <a href="/index.html">Home</a>
                     <a href="/about.html">About</a>
                     <a href="/pricing.html">Pricing</a>
@@ -35,9 +37,11 @@
                     <a href="/contact.html">Contact</a>
                 </div>
 
-                <button class="px-4 py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex  items-center justify-center gap-2">
-                    Free Consultation
-                    <div class="w-7 h-7 bg-white rounded-full p-1">
+                <button class="py-1 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-4 cursor-pointer align-middle text-md transition-all duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
+                    <span class="text-lg pl-4">
+                        Free Consulation
+                    </span>
+                    <div class="w-11 h-11 bg-white rounded-full p-1 flex justify-center items-center mr-1">
                         <img src="./images/arrow.png" alt="">
                     </div>
                 </button>
@@ -46,24 +50,27 @@
             <div class="landing relative w-full h-[240vh] bg-black rounded-3xl flex flex-col gap-64">
                 <div class="landing-upper h-[50%]">
                     <img class="absolute right-0 top-1/2 z-[10] -translate-y-1/2" src="./images/ellipse.png" alt="">
-                    <img class="absolute z-[99] w-[35vw] right-32 top-24" src="./images/bot.png" alt="">
+                    <img class="absolute z-[99] w-[35vw] right-32 top-24" src="./images/home-bot.png" alt="">
+                    <img class="absolute z-[99] w-[10vw] right-[33vw] top-52 custom-spin" src="./images/bot-ball.png" alt="">
                     <img class="absolute left-32 top-18 z-[90]" src="./images/ellipse-faded.png" alt="">
 
                     <div class="absolute left-38 top-32 w-[42vw] h-[42vw] rounded-full z-[95] flex flex-col justify-center">
                         <img class="absolute z-[-1] w-full h-full" src="./images/ellipse-bright.png" alt="">
                         <div class="content ml-18 flex flex-col gap-6 items-start">
                             <div>
-                                <h1 class="text-white text-7xl font-semibold">Empower your</h1>
-                                <h1 class="text-white text-7xl font-semibold">tomorrow, <span class="text-[#7B16EC]">today</span></h1>
+                                <h1 class="text-white text-6xl font-semibold">Empower your</h1>
+                                <h1 class="text-white text-6xl font-semibold">tomorrow, <span class="text-[#7B16EC]">today</span></h1>
                             </div>
             
                             <p class="text-white text-xl w-80">
                                 The actions you take today are the foundation of your future. Start now, grow every day, and empower your tomorrow
                             </p>
 
-                            <button class="px-4 py-4 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex  items-center justify-center gap-4 cursor-pointer align-middle text-lg ml-[10vw]">
-                                Read About Us
-                                <div class="w-7 h-7 bg-white rounded-full p-1">
+                            <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-10 cursor-pointer align-middle text-md transition-all duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC] ml-28 mt-6">
+                                <span class="text-xl pl-8">
+                                    Read About Us
+                                </span>
+                                <div class="w-14 h-14 bg-white rounded-full p-1 flex justify-center items-center mr-2">
                                     <img src="./images/arrow.png" alt="">
                                 </div>
                             </button>
@@ -90,24 +97,34 @@
                     </div>
 
                     <div class="w-full px-2 flex gap-6 pt-20 justify-center items-center">
-                        <div class="relative w-1/4 h-[30vw] p-4">
-                            <h2 class="bg-gradient-to-l from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-6 py-2 w-fit text-sm font-semibold">
+                        <div class="relative w-1/4 h-[30vw] group overflow-hidden">
+                            <h2 class="bg-gradient-to-l from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-6 py-2 w-fit text-sm font-semibold m-4">
                                 CREATIVITY
                             </h2>
-                            <h2 class="absolute left-8 bottom-18 text-white font-semibold text-xl">
+                            <h2 class="absolute left-8 bottom-20 text-white font-semibold text-xl z-2">
                                 Artifical Intelligence
                             </h2>
+                            <button class="absolute left-8 -bottom-8 group-hover:bottom-9 py-1 bg-white text-white font-semibold rounded-full flex items-center justify-around gap-5 cursor-pointer text-[#7B16EC80] align-middle z-2">
+                                <span class="text-transparent bg-clip-text underline bg-gradient-to-r from-[#7B16EC] to-[#000000] border-black text-xs pl-3">
+                                    EXPLORE MORE
+                                </span>
+                                <div class="w-6 h-6 bg-[#7B16EC80] rounded-full p-1 flex justify-center items-center mr-1">
+                                    <img src="./images/arrow.png" alt="">
+                                </div>
+                            </button>
                             <img class="absolute top-0 left-0 z-[-1] w-full h-full" src="./images/ai.png" alt="">  
+                            <img class="w-full absolute bottom-0 origin-bottom h-0 group-hover:h-full duration-150 cursor-pointer" src="./images/hover-overlay.png" alt="">
                         </div>
-                        <div class="relative w-1/4 h-[30vw] p-4">
-                            <h2 class="bg-gradient-to-l from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-6 py-2 w-fit text-sm font-semibold">
+
+                        <div class="relative w-1/4 h-[30vw] group overflow-hidden">
+                            <h2 class="bg-gradient-to-l from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-6 py-2 w-fit text-sm font-semibold m-4">
                                 SECURITY
                             </h2>
-                            <h2 class="absolute left-8 bottom-18 text-white font-semibold text-xl">
+                            <h2 class="absolute left-8 bottom-20 text-white font-semibold text-xl z-2">
                                 Cyber Security
                             </h2>
-                            <button class="absolute left-8 bottom-8 py-1 bg-white text-white font-semibold rounded-full flex items-center justify-around gap-5 cursor-pointer text-[#7B16EC80] align-middle">
-                                <span class="text-xs text-[#2d124b80] pl-2">
+                            <button class="absolute left-8 -bottom-8 group-hover:bottom-9 py-1 bg-white text-white font-semibold rounded-full flex items-center justify-around gap-5 cursor-pointer text-[#7B16EC80] align-middle z-2">
+                                <span class="text-transparent bg-clip-text underline bg-gradient-to-r from-[#7B16EC] to-[#000000] border-black text-xs pl-3">
                                     EXPLORE MORE
                                 </span>
                                 <div class="w-6 h-6 bg-[#7B16EC80] rounded-full p-1 flex justify-center items-center mr-1">
@@ -115,15 +132,26 @@
                                 </div>
                             </button>
                             <img class="absolute top-0 left-0 z-[-1] w-full h-full" src="./images/cyber.png" alt="">
+                            <img class="w-full absolute bottom-0 origin-bottom h-0 group-hover:h-full duration-150 cursor-pointer" src="./images/hover-overlay.png" alt="">
                         </div>
-                        <div class="relative w-1/4 h-[30vw] p-4">
-                            <h2 class="bg-gradient-to-l from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-6 py-2 w-fit text-sm font-semibold">
+
+                        <div class="relative w-1/4 h-[30vw] group overflow-hidden">
+                            <h2 class="bg-gradient-to-l from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-6 py-2 w-fit text-sm font-semibold m-4">
                                 DEVELOPMENT
                             </h2>
-                            <h2 class="absolute left-8 bottom-18 text-white font-semibold text-xl">
+                            <h2 class="absolute left-8 bottom-20 text-white font-semibold text-xl z-2">
                                 Web Development
                             </h2>
+                            <button class="absolute left-8 -bottom-8 group-hover:bottom-9 py-1 bg-white text-white font-semibold rounded-full flex items-center justify-around gap-5 cursor-pointer text-[#7B16EC80] align-middle z-2">
+                                <span class="text-transparent bg-clip-text underline bg-gradient-to-r from-[#7B16EC] to-[#000000] border-black text-xs pl-3">
+                                    EXPLORE MORE
+                                </span>
+                                <div class="w-6 h-6 bg-[#7B16EC80] rounded-full p-1 flex justify-center items-center mr-1">
+                                    <img src="./images/arrow.png" alt="">
+                                </div>
+                            </button>
                             <img class="absolute top-0 left-0 z-[-1] w-full h-full" src="./images/ai.png" alt="">
+                            <img class="w-full absolute bottom-0 origin-bottom h-0 group-hover:h-full duration-150 cursor-pointer" src="./images/hover-overlay.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -141,18 +169,20 @@
                     <img class="absolute bottom-0 left-0 w-[15vw]" src="./images/bot2.png" alt="">
                 </div>
                 <div class="flex flex-col items-start justify-center w-1/2 h-screen gap-10">
-                    <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-6 py-2 w-fit text-2xl font-semibold">
+                    <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-6 py-2 w-fit text-xl font-semibold">
                         Young Team
                     </h2>
-                    <h1 class="text-6xl font-semibold">
+                    <h1 class="text-6xl font-bold text-[#293349]">
                         Team that can lead the world revolutions
                     </h1>
-                    <p class="text-xl font-light leading-[2vw]">
+                    <p class="text-2xl text-zinc-600 leading-[2.5vw]">
                         As a leader in our industry with a history of innovation and a vast, diverse clientele, we provide our people with opportunities to shape the future and impact lives across continents
                     </p>
-                    <button class="px-4 py-4 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-center gap-4 cursor-pointer text-lg">
-                        Read About Us
-                        <div class="w-7 h-7 bg-white rounded-full p-1">
+                    <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-10 cursor-pointer align-middle text-md transition-all duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
+                        <span class="text-xl pl-8">
+                            Read About Us
+                        </span>
+                        <div class="w-14 h-14 bg-white rounded-full p-1 flex justify-center items-center mr-2">
                             <img src="./images/arrow.png" alt="">
                         </div>
                     </button>
@@ -165,10 +195,10 @@
                 
                 <div class="flex">
                     <div class="flex flex-col items-start justify-center w-1/2 h-screen gap-10">
-                        <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-6 py-2 w-fit text-2xl font-semibold">
+                        <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-6 py-2 w-fit text-xl font-semibold">
                             Simple Process
                         </h2>
-                        <h1 class="text-6xl font-semibold">
+                        <h1 class="text-6xl font-bold text-[#293349]">
                             Our process help you to grow faster
                         </h1>
                         <div class="flex flex-col gap-6 px-6">
@@ -241,7 +271,7 @@
                             <span class="text-xl font-medium">Monthly charges</span>
                         </h2>
 
-                        <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-10 cursor-pointer align-middle text-md ">
+                        <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-10 cursor-pointer align-middle text-md transition-all duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
                             <span class="text-xl pl-8">
                                 Read About Us
                             </span>
@@ -287,7 +317,7 @@
                                 <span class="text-xl font-medium">Monthly charges</span>
                             </h2>
 
-                            <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-10 cursor-pointer align-middle text-md ">
+                            <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-10 cursor-pointer align-middle text-md transition-all duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
                                 <span class="text-xl pl-8">
                                     Read About Us
                                 </span>
@@ -329,7 +359,7 @@
                             <span class="text-xl font-medium">Monthly charges</span>
                         </h2>
 
-                        <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-10 cursor-pointer align-middle text-md ">
+                        <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-10 cursor-pointer align-middle text-md transition-all duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
                             <span class="text-xl pl-8">
                                 Read About Us
                             </span>
@@ -343,7 +373,7 @@
             </div>
 
             <div class="interesting-articles w-full py-60 flex flex-col justify-center items-center">
-                <h1 class="text-6xl font-semibold">Interesting Articles</h1>
+                <h1 class="text-6xl font-bold text-[#293349]">Interesting Articles</h1>
 
                 <div class="h-[70%] w-[80%] flex gap-16 mt-16">
                     <div class="w-[30%] flex flex-col gap-5 shadow-lg rounded-2xl">
@@ -412,23 +442,26 @@
             <div class="flex justify-between items-center">
                 <div class="flex flex-col gap-3">
                     <h2 class="text-4xl font-semibold mb-2">Quick Links</h2>
-                    <a class="text-lg font-light tracking-wide" href="">Home</a>
-                    <a class="text-lg font-light tracking-wide" href="">About</a>
-                    <a class="text-lg font-light tracking-wide" href="">Industries</a>
-                    <a class="text-lg font-light tracking-wide" href="">Services</a>
-                    <a class="text-lg font-light tracking-wide" href="">Career</a>
-                    <a class="text-lg font-light tracking-wide" href="">Contact</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/index.html">Home</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/about.html">About</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">Industries</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/services.html">Services</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">Career</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/contact.html">Contact</a>
                 </div>
-                <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-3 w-1/5">
                     <h2 class="text-4xl font-semibold mb-2">Services</h2>
-                    <a class="text-lg font-light tracking-wide" href="/webdev.html">Website Development</a>
-                    <a class="text-lg font-light tracking-wide" href="">CRM</a>
-                    <a class="text-lg font-light tracking-wide" href="">AI Automation</a>
-                    <a class="text-lg font-light tracking-wide" href="">Social Media Management</a>
-                    <a class="text-lg font-light tracking-wide" href="">SEO</a>
-                    <a class="text-lg font-light tracking-wide" href="">Designing</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/webdev.html">Website Development</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">CRM</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">AI Automation</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">Social Media Management</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">SEO</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">Designing</a>
                 </div>
-                <img class="w-1/4" src="./images/bot.png" alt="">
+                <div class="w-1/4 relative">
+                    <img class="w-full" src="./images/home-bot.png" alt="">
+                    <img class="w-24 absolute left-0 top-14 custom-spin" src="./images/bot-ball.png" alt="">
+                </div>
             </div>
             <div class="flex justify-center mt-4 items-center py-8 text-lg text-zinc-300">
                 @ Copyright  2025, Globalantic -Services & Products
