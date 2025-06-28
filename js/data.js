@@ -6,7 +6,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 1",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"   
     },
 
     {
@@ -15,7 +16,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 1",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     },
 
     {
@@ -24,7 +26,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 1",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     },
 
     {
@@ -33,7 +36,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 1",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     },
 
     {
@@ -42,7 +46,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 1",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     },
 
     {
@@ -51,7 +56,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 1",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     }
     ],
 
@@ -62,7 +68,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 2",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     },
 
     {
@@ -71,7 +78,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 2",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     },
 
     {
@@ -80,7 +88,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 2",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     },
 
     {
@@ -89,7 +98,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 2",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     },
 
     {
@@ -98,7 +108,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 2",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     },
 
     {
@@ -107,7 +118,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 2",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     }
     ],
 
@@ -118,7 +130,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 3",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     },
 
     {
@@ -127,7 +140,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 3",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     },
 
     {
@@ -136,7 +150,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 3",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     },
 
     {
@@ -145,7 +160,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 3",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     },
 
     {
@@ -154,7 +170,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 3",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     },
 
     {
@@ -163,7 +180,8 @@ const blogs =[
         src:'images/article1.png',
         title:"Latest blogs on latest topics 3",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, inventore!",
-        date:"12th May"   
+        date:"12th May",
+        name:"Den viliamso"    
     }
     ]
 ];
@@ -184,6 +202,7 @@ document.getElementById("leftArrow").addEventListener("click",()=> {
         <h2 class="text-3xl font-bold px-8 py-5 text-[#293349]">${blog.title}</h2>
         <p class="text-[1.15vw] px-8">${blog.description}</p>
         <span class="py-7 px-8 font-semibold">${blog.date}</span>
+        <span class="py-7 px-8 font-semibold">${blog.name}</span>
         `;
 
         if(id<3)blogContainer1.appendChild(blogCard);
@@ -206,6 +225,7 @@ document.getElementById("rightArrow").addEventListener("click",()=> {
         <h2 class="text-3xl font-bold px-8 py-5 text-[#293349]">${blog.title}</h2>
         <p class="text-[1.15vw] px-8">${blog.description}</p>
         <span class="py-7 px-8 font-semibold">${blog.date}</span>
+        <span class="py-7 px-8 font-semibold"> By ${blog.name}</span>
         `;
 
         if(id<3)blogContainer1.appendChild(blogCard);
@@ -233,7 +253,15 @@ blogs[idx].forEach((blog , id) =>{
     <img class="w-full" src="${blog.src}" alt="">
     <h2 class="text-3xl font-bold px-8 py-5 text-[#293349]">${blog.title}</h2>
     <p class="text-[1.15vw] px-8">${blog.description}</p>
-    <span class="py-7 px-8 font-semibold">${blog.date}</span>
+    <span class="py-7 px-8 font-semibold text-sm text-[#2e3245]">
+    ${blog.date}
+    </span>
+
+    <span class="py-1 px-8 font-semibold text-sm text-[#2e3245] uppercase">
+    By 
+    <span class="ml-1 border-b-2 border:[#2110a8] text-[#2110a8] transition duration-300 cursor-pointer">
+        ${blog.name}
+    </span>
     `;
 
     if(id<3)blogContainer1.appendChild(blogCard);

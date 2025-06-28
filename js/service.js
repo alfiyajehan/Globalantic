@@ -7,9 +7,8 @@ const bestServices = document.querySelector(".bestServices");
 const rating = document.querySelector(".rating");
 const rgt = document.querySelector(".rgt");
 const dataSection =document.querySelector(".dataSection")
-const creativeApproach2 =document.querySelector(".creativeApproach2")
+const creative =document.querySelector(".creative")
 const ourServices =document.querySelector(".ourServices")
-var tl = gsap.timeline();
 
 gsap.from(service,{
     y:50,
@@ -70,27 +69,35 @@ gsap.timeline({
 });
 
 
-tl.from(creativeApproach2,{
-    y:100,
+gsap.from(creative,{
+    y:50,
     opacity:0,
-    duration:0.7,
+    duration:1,
         scrollTrigger:{
-        trigger: creativeApproach2,
+        trigger: creative,
         scroller:"body",
-        start:"top 75%",
+        start:"top 90%",
     }
 })
 
-tl.from(ourServices,{
+gsap.from(ourServices,{
     y:50,
     opacity:0,
-    duration:0.7,
-
+    duration:1,
+      scrollTrigger:{
+      trigger: creative,
+      scroller:"body",
+      start:"top 90%",
+    }
 })
-
-tl.from(".card div",{
+gsap.from(".card div",{
     y:50,
     opacity:0,
     duration:1,
     stagger:0.1,
+    scrollTrigger:{
+    trigger: ".card div",
+    scroller:"body",
+    start:"top 85%",
+  }
 })

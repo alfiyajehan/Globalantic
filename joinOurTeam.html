@@ -35,7 +35,7 @@
                     <a href="/contact.html">Contact</a>
                 </div>
 
-                <button class="py-1 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-4 cursor-pointer align-middle text-md transition-all duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
+                <button class="py-1 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-4 cursor-pointer align-middle text-md transition-colors duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
                     <span class="text-lg pl-4">
                         Free Consulation
                     </span>
@@ -49,30 +49,30 @@
 
         <!-- top image section -->
         <div class="relative w-[98vw] mx-auto mb-[4em]">
-            <h2 class="text-white font-semibold absolute font left-1/2 top-1/2 -translate-1/2 text-7xl">Join our team</h2>
-            <img class='absolute bottom-4 left-1/2 -translate-x-1/2' src="./images/downArrow.png" alt="">
+            <h2 class="joinOurTeam text-white font-semibold absolute font left-1/2 top-1/2 -translate-1/2 text-7xl">Join our team</h2>
+            <img class='downArrow absolute bottom-4 left-1/2 -translate-x-1/2' src="./images/downArrow.png" alt="">
             <img class='object-contain' src="./images/joinOurTeam.png" alt="">
         </div>
 
-        <h2 class="text-center text-6xl font-bold text-[#293349] m-20">Join the team</h2>
+        <h2 class="joinTheTeam text-center text-6xl font-bold text-[#293349] m-20">Join the team</h2>
 
         <!-- image section -->
          <div class="flex gap-12 justify-center my-15">
-            <div>
+            <div class="cards">
                 <img src="images/Group 146.png" alt="">
             </div>
-            <div>
+            <div class="cards">
                 <img src="images/man (2).png" alt="">
             </div>
-            <div>
+            <div class="cards">
                 <img src="images/man (2).png" alt="">
             </div>
-            <div>
+            <div class="cards">
                 <img src="images/man (2).png" alt="">
             </div>
          </div>
 
-        <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] text-white rounded-3xl px-15 py-2 w-fit text-xl font-semibold mt-[5em] mb-12 relative left-1/2 -translate-x-1/2">
+        <h2 class="requestQuote bg-gradient-to-r from-[#722FE2] via-[#7B16EC] text-white rounded-3xl px-15 py-2 w-fit text-xl font-semibold mt-[5em] mb-12 relative left-1/2 -translate-x-1/2">
             REQUEST QUOTE
         </h2> 
         <h2 class="text-6xl font-bold text-[#293349] text-center mb-6 mt-15">
@@ -181,9 +181,13 @@
 
 
     <!-- locomotive cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script> -->
 
-    <script src="./js/script.js" type="module"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/joinOurTeam.js" type="module"></script>
 
 </body>
 </html>
