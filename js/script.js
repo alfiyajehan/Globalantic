@@ -1,8 +1,7 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true
-});
-
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('.main'),
+//     smooth: true
+// });
 
 const brightEllipse = document.querySelector(".ellipse-bright");
 const fadedEllipse = document.querySelector(".ellipse-faded");
@@ -91,3 +90,19 @@ tl.from(brightEllipse, {
     duration: .3,
     ease: "power1.out"
 })
+
+gsap.from(".young-brains-head", {
+    opacity: 0,
+    top: 90,
+    duration: .4,
+    ease: "power1.out",
+    scrollTrigger: {
+        markers: true,
+        scroller: ".main",
+        trigger: ".young-team",
+        start: "top 0%",
+        end: "top 20%",
+        scrub: 1,
+    },
+})
+
