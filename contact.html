@@ -35,7 +35,7 @@
                     <a href="/contact.html">Contact</a>
                 </div>
 
-                <button class="py-1 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-4 cursor-pointer align-middle text-md transition-all duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
+                <button class="py-1 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-4 cursor-pointer align-middle text-md transition-colors duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
                     <span class="text-lg pl-4">
                         Free Consulation
                     </span>
@@ -49,42 +49,45 @@
 
         <!-- top image section -->
         <div class="relative w-[98vw] mx-auto mb-[6em]">
-            <h2 class="text-white font-semibold absolute font left-1/2 top-1/2 -translate-1/2 text-7xl">Contact us</h2>
-            <img class='absolute bottom-4 left-1/2 -translate-x-1/2' src="./images/downArrow.png" alt="">
+            <h2 class="contact text-white font-semibold absolute font left-1/2 top-1/2 -translate-1/2 text-7xl">Contact us</h2>
+            <img class='downArrow absolute bottom-4 left-1/2 -translate-x-1/2' src="./images/downArrow.png" alt="">
             <img class='object-contain' src="./images/contactus-banner.png" alt="">
         </div>
 
         <div class="w-[85%] mx-auto gap-10 about-company-upper flex flex-col justify-between py-11">
-            <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-6 py-2 w-fit text-xl font-semibold">
+            <h2 class="aboutCompany bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-6 py-2 w-fit text-xl font-semibold">
                 ABOUT COMPANY
             </h2>
 
             <div class="flex">
-                <h1 class="text-6xl font-bold text-[#293349] w-1/2 leading-[5vw]">
+                <h1 class="matter1 text-6xl font-bold text-[#293349] w-[60%] leading-[5vw]">
                     <span>Have a project in mind?</span>
                     <span>Get in touch !</span>
                 </h1>
-                <p class="w-1/2 text-2xl text-zinc-600 leading-[2.5vw]">
-                    As a leader in our industry with a history of innovation and a vast, diverse clientele, we provide our people with opportunities to shape the future and impact lives across continents
-                </p>
+                <div class="matter2 w-[47%] text-2xl text-zinc-600 leading-[2.5vw]">
+                    <span id="text1" class="inline-block">As a leader in our industry with a history of</span>
+                    <span id="text2" class="inline-block">innovation and a vast, diverse clientele, we provide</span>
+                    <span id="text3" class="inline-block">our people with opportunities to shape the future</span>
+                    <span id="text4" class="inline-block">and impact lives across continents.</span>
+                </div>
             </div>
 
-            <div class="flex justify-between px-10 gap-16 py-20">
-                <div class="flex flex-col gap-2 w-1/4">
+            <div class="infoSection flex justify-between px-10 gap-16 py-20">
+                <div class="infoCol flex flex-col gap-2 w-1/4">
                     <h2 class="text-3xl text-[#242E45] font-bold">Office location</h2>
                     <div class="w-full bg-[#242E45] h-[1.5px] mb-4 mt-1"></div>
                     <p class="text-zinc-600 text-xl ">
                         Office No. 582, Near Market, Bhopal
                     </p>
                 </div>
-                <div class="flex flex-col gap-2 w-1/4">
+                <div class="infoCol flex flex-col gap-2 w-1/4">
                     <h2 class="text-3xl text-[#242E45] font-bold">Send a message</h2>
                     <div class="w-full bg-[#242E45] h-[1.5px] mb-4 mt-1"></div>
                     <p class="text-zinc-600 text-xl ">
                         info@globalantic.com
                     </p>
                 </div>
-                <div class="flex flex-col gap-2 w-1/4">
+                <div class="infoCol flex flex-col gap-2 w-1/4">
                     <h2 class="text-3xl text-[#242E45] font-bold">Call us directly</h2>
                     <div class="w-full bg-[#242E45] h-[1.5px] mb-4 mt-1"></div>
                     <p class="text-zinc-600 text-xl ">
@@ -94,7 +97,7 @@
                         +91 99999-99999
                     </p>
                 </div>
-                <div class="flex flex-col gap-2 w-1/4">
+                <div class="infoCol flex flex-col gap-2 w-1/4">
                     <h2 class="text-3xl text-[#242E45] font-bold">Join our team</h2>
                     <div class="w-full bg-[#242E45] h-[1.5px] mb-4 mt-1"></div>
                     <p class="text-zinc-600 text-xl ">
@@ -103,8 +106,8 @@
                 </div>
             </div>
 
-            <div class="bg-[#7B16EC33] w-fit px-24 py-8 rounded-full mx-auto">
-                <h2 class="text-xl text-center uppercase">
+            <div class="greatWork bg-[#7B16EC33] w-fit px-24 py-8 rounded-full mx-auto">
+                <h2 class=" text-xl text-center uppercase">
                     Let's make something great work together. 
                     <span class="text-transparent bg-clip-text underline bg-gradient-to-r from-[#7B16EC] to-[#000000] border-b-2 border-black">
                         Got a project in mind ? 
@@ -238,9 +241,13 @@
 
 
     <!-- locomotive cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script> -->
 
-    <script src="./js/script.js" type="module"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/contact.js" type="module"></script>
 
 </body>
 </html>
