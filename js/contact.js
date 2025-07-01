@@ -67,7 +67,7 @@ tl3.from("#text1",{
     scrollTrigger:{
         trigger:".infoSection .infoCol",
         scroller:"body",
-        start:"top 80%"
+        start:"top 85%"
     }
 })
 
