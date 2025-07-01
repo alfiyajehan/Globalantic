@@ -19,10 +19,8 @@
     
 </head>
 <body>
-    <div class="main font-[jakarta]">
+    <div class="main font-[jakarta] overflow-hidden">
         <div class="w-full md:w-11/12 mx-auto">
-
-            <!-- UPDATED CHECK -->
 
             <!-- navbar -->
             <nav class="w-full py-2 flex justify-between items-center px-4 md:px-0">
@@ -53,15 +51,17 @@
                     </div>
                 </button>
             </nav>  
-
-            <div class="landing relative w-full h-[220vh] md:h-[240vh] bg-black rounded-3xl flex flex-col gap-64">
+            
+            <!-- landing page section -->
+            <div class="landing relative w-full h-[205vh] md:h-[240vh] bg-black rounded-3xl flex flex-col gap-64">
+                <!-- landing section upper part -->
                 <div class="landing-upper h-[50%]">
                     <img class="absolute right-0 top-1/2 z-[10] -translate-y-1/2" src="./images/ellipse.png" alt="">
                     <img class="absolute z-[99] w-[65vw] md:w-[35vw] right-4 md:right-32 top-[100vw] md:top-24" src="./images/home-bot.png" alt="">
                     <img class="absolute z-[99] w-[15vw] md:w-[10vw] right-[52vw] md:right-[33vw] top-[117vw] md:top-52 custom-spin" src="./images/bot-ball.png" alt="">
                     <img class="ellipse-faded absolute w-[95vw] md:w-fit left-1/2 -translate-x-1/2 md:-translate-x-0 md:left-32 top-18 z-[90]" src="./images/ellipse-faded.png" alt="">
 
-                    <div class="absolute left-5 md:left-38 top-26 md:top-32 w-[80vw] h-[80vw] md:w-[42vw] md:h-[42vw] rounded-full z-[95] flex flex-col justify-center">
+                    <div class="absolute left-5 md:left-38 top-26 md:top-30 w-[80vw] h-[80vw] md:w-[38vw] md:h-[38vw] rounded-full z-[95] flex flex-col justify-center">
                         <img class="ellipse-bright absolute z-[-1] w-full h-full" src="./images/ellipse-bright.png" alt="">
                         <div class="content ml-9 md:ml-18 flex flex-col gap-2 md:gap-6 items-start">
                             <div>
@@ -91,6 +91,7 @@
                     </div>
                 </div>
 
+                <!-- landing section bottom part -->
                 <div class="landing-bottom h-[50%] z-[100]">
                     <div class="text-white flex md:flex-row flex-col-reverse justify-center gap-14 items-center">
                         <p class="text-sm md:text-xl w-[85%] md:w-[34%] text-zinc-400">
@@ -168,8 +169,9 @@
                 </div>
             </div>
 
-            <!-- young teams -->
-            <div class="young-team pt-32 md:pt-42 w-full h-3/4 flex md:flex-row flex-col items-center md:items-start md:gap-20">
+            <!-- young brains involved -->
+            <div class="young-team pt-20 md:pt-42 w-full h-3/4 flex md:flex-row flex-col items-center md:items-start md:gap-20">
+                <!-- young team circle section -->
                 <div class="relative w-[95vw] h-[95vw] md:w-[45vw] md:h-[45vw] bg-[url('./images/ellipse-17.png')] bg-no-repeat rounded-full bg-contain flex items-center justify-center">
                     <div class="w-[70vw] h-[70vw] md:w-[30vw] md:h-[30vw] rounded-full bg-[url('./images/ellipse-18.png')] bg-no-repeat bg-contain flex flex-col gap-2 justify-center items-center">
                         <h1 class="text-5xl md:text-9xl font-bold text-[#5e0aeb] text-center">20<sup class="">+</sup></h1>
@@ -180,8 +182,10 @@
                     </div>
                     <img class="absolute bottom-0 left-0 w-[35vw] md:w-[15vw]" src="./images/bot2.png" alt="">
                 </div>
-                <div class="flex flex-col items-start justify-center w-[80%] md:w-1/2 h-screen gap-10">
-                    <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-4 pr-10 md:pr-0 md:px-6 py-2 w-fit text-sm md:text-xl font-semibold">
+                
+                <!-- young team text section -->
+                <div class="flex flex-col items-start justify-center w-[80%] md:w-1/2 mt-20 md:mt-0 md:h-screen gap-10">
+                    <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-4 pr-10 md:pr-0 md:px-6 py-2 w-52 text-sm md:text-xl font-semibold">
                         Young Team
                     </h2>
                     <h1 class="relative text-[7vw] md:text-6xl font-bold text-[#293349] leading-[8vw] md:leading-[5vw] text-center md:text-start">
@@ -199,15 +203,14 @@
                         </div>
                     </button>
                 </div>
-
             </div>
             
 
-            <div class="simple-process pt-42 px-10 w-full h-3/4 flex flex-col md:gap-20">
+            <div class="simple-process pt-26 md:pt-42 px-10 w-full h-3/4 flex flex-col md:gap-20">
                 
                 <div class="flex md:flex-row flex-col-reverse">
-                    <div class="flex flex-col items-start justify-center w-full md:w-1/2 h-screen gap-10">
-                        <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-4 pr-10 md:pr-0 md:px-6 py-2 w-fit text-sm md:text-xl font-semibold">
+                    <div class="flex flex-col items-start justify-center w-full md:w-1/2 h-[80vh] md:h-screen gap-10">
+                        <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-4 pr-10 md:pr-0 md:px-6 py-2 w-52 text-sm md:text-xl font-semibold">
                             Simple Process
                         </h2>
                         <h1 class="text-[7vw] md:text-6xl text-center md:text-start font-bold text-[#293349]">
@@ -242,193 +245,185 @@
             
 
             <div class="pricing-section flex flex-col items-center gap-10 py-20">
-                <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-[white]  text-white rounded-3xl px-4 pr-10 md:pr-0 md:px-6 py-2 w-fit text-sm md:text-xl font-semibold">
+                <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-[white]  text-white rounded-3xl px-4 pr-10 md:pr-0 md:px-6 py-2 w-52 text-sm md:text-xl font-semibold">
                     Package Pricing
                 </h2>
 
-                <h1 class="text-[7vw] md:text-5xl font-bold text-[#262F46] leading-[9vw] md:leading-[4vw] flex flex-col text-center mb-16"> 
+                <h1 class="text-[7vw] md:text-5xl font-bold text-[#262F46] leading-[9vw] md:leading-[4vw] flex flex-col text-center md:mb-16"> 
                     <span>Flexible pricing plans</span>
                     <span>for all</span>
                 </h1>
 
-                <div class="pricing-cards flex gap-14">
-                    <div class="price-card bg-[#7B16EC1F] flex flex-col px-14 pt-20 pb-10 items-center rounded-3xl gap-4 justify-between">
-                        <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-[#7B16EC1F]  text-white rounded-3xl px-6 py-2 w-fit text-xl font-semibold">
+                <div class="pricing-cards flex w-[100vw] md:w-fit gap-2 overflow-x-auto scroll-smooth snap-x snap-mandatory snap-center md:gap-14 md:overflow-visible whitespace-nowrap md:px-4">
+                    <!-- starter plan -->
+                    <div class="price-card w-[25vw] h-[90vh] md:h-fit bg-[#7B16EC1F] flex flex-col md:px-8 pt-20 pb-10 items-center rounded-3xl gap-4 justify-between min-w-[85%] md:min-w-0 snap-start md:snap-none">
+                        <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-[#7B16EC1F] text-white rounded-3xl px-6 py-2 w-fit text-sm md:text-xl font-semibold">
                             Starter plan
                         </h2>
-                        <h1 class="text-4xl font-bold">
-                            Startups
-                        </h1>
+                        <h1 class="text-3xl md:text-4xl font-bold">Startups</h1>
                         <div class="flex flex-col gap-5">
-                            <p class="flex gap-3 items-center text-xl font-semibold">
+                            <p class="flex gap-3 items-center text-sm md:text-xl font-semibold">
                                 <img class="w-6 h-6" src="./images/right-icon.png" alt="">
                                 Marketing Strategy
                             </p>
-                            <p class="flex gap-3 items-center text-xl font-semibold">
+                            <p class="flex gap-3 items-center text-sm md:text-xl font-semibold">
                                 <img class="w-6 h-6" src="./images/right-icon.png" alt="">
                                 Marketing Strategy
                             </p>
-                            <p class="flex gap-3 items-center text-xl font-semibold">
+                            <p class="flex gap-3 items-center text-sm md:text-xl font-semibold">
                                 <img class="w-6 h-6" src="./images/wrong-icon.png" alt="">
                                 Non-Marketing Strategy
                             </p>
-                            <p class="flex gap-3 items-center text-xl font-semibold">
+                            <p class="flex gap-3 items-center text-sm md:text-xl font-semibold">
                                 <img class="w-6 h-6" src="./images/wrong-icon.png" alt="">
                                 Non-Marketing Strategy
                             </p>
                         </div>
-                        
-                        <h2 class="text-4xl font-bold">
+                        <h2 class="text-2xl md:text-4xl font-bold">
                             ₹9,999 
                             <span class="text-xl font-medium">Monthly charges</span>
                         </h2>
-
-                        <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-10 cursor-pointer align-middle text-md transition-colors duration-300 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
-                            <span class="text-xl pl-8">
-                                Read About Us
+                        <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-5 cursor-pointer align-middle text-lg transition-all duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
+                            <span class="text-lg md:text-2xl pl-5">
+                                Join Our Team
                             </span>
-                            <div class="w-14 h-14 bg-white rounded-full p-1 flex justify-center items-center mr-2">
+                            <div class="w-12 md:w-16 h-12 md:h-16 bg-white rounded-full p-1 flex justify-center items-center mr-2">
                                 <img src="./images/arrow.png" alt="">
                             </div>
                         </button>
                     </div>
 
-                    <div class="relative -top-15 price-card bg-[#7B16EC1F] flex flex-col  justify-between items-center rounded-3xl overflow-hidden gap-10">
-                        <h2 class="top-0 w-full bg-gradient-to-r from-[#7B16EC] to-[#1C052F] flex justify-center items-center py-4 mb-14 text-xl font-bold text-white">
+                    <!-- most popular plan -->
+                    <div id="centerCard" class="relative md:scale-y-115 md:scale-x-115 price-card w-[25vw] h-[90vh] md:h-fit bg-[#7B16EC1F] flex flex-col justify-between items-center rounded-3xl overflow-hidden gap-10 min-w-[85%] md:min-w-0 snap-center md:snap-none">
+                        <h2 class="top-0 w-full bg-gradient-to-r from-[#7B16EC] to-[#1C052F] flex justify-center items-center py-4 md:mb-14 text-xl font-bold text-white">
                             Most Popular
                         </h2>
-
-                        <div class=" flex flex-col justify-between items-center rounded-3xl overflow-hidden gap-10 px-14 pb-10">
-                            <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-[#7B16EC1F] text-white rounded-3xl px-6 py-2 w-fit text-xl font-semibold">
+                        <div class="flex flex-col justify-between items-center rounded-3xl overflow-hidden gap-10 px-8 pb-10">
+                            <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-[#7B16EC1F] text-white rounded-3xl px-6 py-2 w-fit text-sm md:text-xl font-semibold">
                                 Professional plan
                             </h2>
-                            <h1 class="text-4xl font-bold">
-                                Business
-                            </h1>
+                            <h1 class="text-3xl md:text-4xl font-bold">Business</h1>
                             <div class="flex flex-col gap-5">
-                                <p class="flex gap-3 items-center text-xl font-semibold">
+                                <p class="flex gap-3 items-center text-sm md:text-xl font-semibold">
                                     <img class="w-6 h-6" src="./images/right-icon.png" alt="">
                                     Marketing Strategy
                                 </p>
-                                <p class="flex gap-3 items-center text-xl font-semibold">
+                                <p class="flex gap-3 items-center text-sm md:text-xl font-semibold">
                                     <img class="w-6 h-6" src="./images/right-icon.png" alt="">
                                     Marketing Strategy
                                 </p>
-                                <p class="flex gap-3 items-center text-xl font-semibold">
+                                <p class="flex gap-3 items-center text-sm md:text-xl font-semibold">
                                     <img class="w-6 h-6" src="./images/wrong-icon.png" alt="">
                                     Non-Marketing Strategy
                                 </p>
-                                <p class="flex gap-3 items-center text-xl font-semibold">
+                                <p class="flex gap-3 items-center text-sm md:text-xl font-semibold">
                                     <img class="w-6 h-6" src="./images/wrong-icon.png" alt="">
                                     Non-Marketing Strategy
                                 </p>
                             </div>
-                            
-                            <h2 class="text-4xl font-bold">
+                            <h2 class="text-2xl md:text-4xl font-bold">
                                 ₹9,999 
                                 <span class="text-xl font-medium">Monthly charges</span>
                             </h2>
-
-                            <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-10 cursor-pointer align-middle text-md transition-colors duration-300 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
-                                <span class="text-xl pl-8">
-                                    Read About Us
+                            <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-5 cursor-pointer align-middle text-lg transition-all duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
+                                <span class="text-lg md:text-2xl pl-5">
+                                    Join Our Team
                                 </span>
-                                <div class="w-14 h-14 bg-white rounded-full p-1 flex justify-center items-center mr-2">
+                                <div class="w-12 md:w-16 h-12 md:h-16 bg-white rounded-full p-1 flex justify-center items-center mr-2">
                                     <img src="./images/arrow.png" alt="">
                                 </div>
                             </button>
                         </div>
                     </div>
 
-                    <div class="price-card bg-[#7B16EC1F] flex flex-col px-14 justify-between items-center rounded-3xl gap-10 pt-20 pb-10">
-                        <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-[#7B16EC1F]  text-white rounded-3xl px-6 py-2 w-fit text-xl font-semibold">
+                    <!-- pro plan -->
+                    <div class="price-card w-[25vw] h-[90vh] md:h-fit bg-[#7B16EC1F] flex flex-col px-8 justify-between items-center rounded-3xl gap-10 pt-20 pb-10 min-w-[85%] md:min-w-0 snap-end md:snap-none">
+                        <h2 class="bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-[#7B16EC1F] text-white rounded-3xl px-6 py-2 w-fit text-sm md:text-xl font-semibold">
                             Pro plan
                         </h2>
-                        <h1 class="text-4xl font-bold">
-                            Professional
-                        </h1>
+                        <h1 class="text-3xl md:text-4xl font-bold">Professional</h1>
                         <div class="flex flex-col gap-5">
-                            <p class="flex gap-3 items-center text-xl font-semibold">
+                            <p class="flex gap-3 items-center text-sm md:text-xl font-semibold">
                                 <img class="w-6 h-6" src="./images/right-icon.png" alt="">
                                 Marketing Strategy
                             </p>
-                            <p class="flex gap-3 items-center text-xl font-semibold">
+                            <p class="flex gap-3 items-center text-sm md:text-xl font-semibold">
                                 <img class="w-6 h-6" src="./images/right-icon.png" alt="">
                                 Marketing Strategy
                             </p>
-                            <p class="flex gap-3 items-center text-xl font-semibold">
+                            <p class="flex gap-3 items-center text-sm md:text-xl font-semibold">
                                 <img class="w-6 h-6" src="./images/wrong-icon.png" alt="">
                                 Non-Marketing Strategy
                             </p>
-                            <p class="flex gap-3 items-center text-xl font-semibold">
+                            <p class="flex gap-3 items-center text-sm md:text-xl font-semibold">
                                 <img class="w-6 h-6" src="./images/wrong-icon.png" alt="">
                                 Non-Marketing Strategy
                             </p>
                         </div>
-                        
-                        <h2 class="text-4xl font-bold">
+                        <h2 class="text-2xl md:text-4xl font-bold">
                             ₹9,999 
                             <span class="text-xl font-medium">Monthly charges</span>
                         </h2>
-
-                        <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-10 cursor-pointer align-middle text-md transition-colors duration-300 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
-                            <span class="text-xl pl-8">
-                                Read About Us
+                        <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-5 cursor-pointer align-middle text-lg transition-all duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
+                            <span class="text-lg md:text-2xl pl-5">
+                                Join Our Team
                             </span>
-                            <div class="w-14 h-14 bg-white rounded-full p-1 flex justify-center items-center mr-2">
+                            <div class="w-12 md:w-16 h-12 md:h-16 bg-white rounded-full p-1 flex justify-center items-center mr-2">
                                 <img src="./images/arrow.png" alt="">
                             </div>
                         </button>
                     </div>
                 </div>
 
+
+
             </div>
 
-            <div class="interesting-articles w-full py-60 flex flex-col justify-center items-center">
-                <h1 class="text-6xl font-bold text-[#293349]">Interesting Articles</h1>
+            <div class="interesting-articles w-full pt-10 pb-26 md:py-40 flex flex-col justify-center items-center">
+                <h1 class="text-3xl text-center md:text-start md:text-6xl font-bold text-[#293349]">Interesting Articles</h1>
 
-                <div class="h-[70%] w-[80%] flex gap-16 mt-16">
-                    <div class="w-[30%] flex flex-col gap-5 shadow-lg rounded-2xl">
+                <div class="h-[70%] w-[80%] flex md:flex-row flex-col gap-16 mt-16">
+                    <div class="w-full md:w-[30%] flex flex-col gap-5 shadow-lg rounded-2xl">
                         <img class="h-[40%] " src="./images/article1.png" alt="">
 
                         <div class="w-full h-[60%] px-12 flex flex-col gap-8">
                             <h2 class="text-2xl font-semibold">
                                 Build up healthy habits and strong peaceful life.
                             </h2>
-                            <p class="text-[1.15vw]">
+                            <p class="text-lg md:text-[1.15vw]">
                                 Lorem ipsum dolor consectetur adipiscing eiusmod tempor...
                             </p>
-                            <span>
+                            <span class="pb-10 md:pb-0 font-semibold">
                                 25 SEPTEMBER 2021
                             </span>
                         </div>
                     </div>
-                    <div class="w-[30%] flex flex-col gap-5 shadow-lg rounded-2xl">
+                    <div class="w-full md:w-[30%] flex flex-col gap-5 shadow-lg rounded-2xl">
                         <img class="h-[40%] " src="./images/article2.png" alt="">
 
                         <div class="w-full h-[60%] px-12 flex flex-col gap-8">
                             <h2 class="text-2xl font-semibold">
                                 How to bring the season into your great marketing.
                             </h2>
-                            <p class="text-[1.15vw]">
+                            <p class="text-lg md:text-[1.15vw]">
                                 Lorem ipsum dolor consectetur adipiscing eiusmod tempor...
                             </p>
-                            <span>
+                            <span class="pb-10 md:pb-0 font-semibold">
                                 25 SEPTEMBER 2021
                             </span>
                         </div>
                     </div>
-                    <div class="w-[30%] flex flex-col gap-5 shadow-lg rounded-2xl">
+                    <div class="w-full md:w-[30%] flex flex-col gap-5 shadow-lg rounded-2xl">
                         <img class="h-[40%] " src="./images/article1.png" alt="">
 
                         <div class="w-full h-[60%] px-12 flex flex-col gap-8">
                             <h2 class="text-2xl font-semibold">
                                 How to bring the season into your great marketing.
                             </h2>
-                            <p class="text-[1.15vw]">
+                            <p class="text-lg md:text-[1.15vw]">
                                 Lorem ipsum dolor consectetur adipiscing eiusmod tempor...
                             </p>
-                            <span>
+                            <span class="pb-10 md:pb-0 font-semibold">
                                 25 SEPTEMBER 2021
                             </span>
                         </div>
@@ -436,12 +431,12 @@
                     
                     
                 </div>
-                <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-10 cursor-pointer align-middle text-md transition-colors duration-300 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC] mt-20">
-                    <span class="text-xl pl-8">
-                        <a href="/blogDetails.html">Read About Us</a>
+                <button class="intro-btn mt-20 py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-4 md:gap-10 cursor-pointer align-middle text-lg transition-colors duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
+                    <span class="text-sm md:text-2xl pl-6 md:pl-8">
+                        Read About Us
                     </span>
-                    <div class="w-14 h-14 bg-white rounded-full p-1 flex justify-center items-center mr-2">
-                        <img src="./images/arrow.png" alt="">
+                    <div class="w-8 md:w-16 h-8 md:h-16 bg-white rounded-full p-1 flex justify-center items-center mr-2">
+                        <img class="w-4" src="./images/arrow.png" alt="">
                     </div>
                 </button>
             </div>
@@ -465,7 +460,7 @@
                     <h2 class="text-2xl md:text-4xl font-semibold mb-2">Quick Links</h2>
                     <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/index.html">Home</a>
                     <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/about.html">About</a>
-                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">Industries</a>
+                    <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/blogDetails.html">Industries</a>
                     <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/services.html">Services</a>
                     <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">Career</a>
                     <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/contact.html">Contact</a>

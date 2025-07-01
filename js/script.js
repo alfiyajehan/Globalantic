@@ -105,3 +105,11 @@ gsap.from(".young-brains-head", {
     },
 })
 
+
+  window.addEventListener("DOMContentLoaded", () => {
+    // Only scroll to center on small screens
+    if (window.innerWidth < 768) {
+      const centerCard = document.getElementById("centerCard");
+      centerCard?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+    }
+  });

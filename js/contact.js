@@ -58,6 +58,11 @@ tl3.from("#text1",{
     opacity:0,
     duration:0.6,
 })
+.from("#text5",{
+    y:50,
+    opacity:0,
+    duration:0.6,
+})
 
 gsap.from(".infoSection .infoCol",{
     y:100,
@@ -71,7 +76,7 @@ gsap.from(".infoSection .infoCol",{
     }
 })
 
-.from(".greatWork",{
+gsap.from(".greatWork",{
     x:40,
     opacity:0,
     duration:0.7,
@@ -80,4 +85,47 @@ gsap.from(".infoSection .infoCol",{
     scroller:"body",
     start:"top 80%",
     }
+})
+
+let tl4 = gsap.timeline(
+    {
+        scrollTrigger:{
+        trigger:".about2",
+        scroller:"body",
+        start:"top 84%",
+    }
+}
+);
+
+tl4.from(".about2",{
+    y:100,
+    opacity:0,
+    duration:0.7,
+
+})
+.from(".helpYou",{
+    y:100,
+    opacity:0,
+    duration:0.7,
+})
+
+let tl5 = gsap.timeline({
+    scrollTrigger:{
+        scroller:"body",
+        trigger: ".form",
+        start:"top 67%",
+    }
+});
+
+tl5.from(".form .row",{
+    y:10,
+    opacity:0,
+    duration:1,
+    stagger:0.5,
+
+})
+
+tl5.from(".btn",{
+    y:50,
+    duration:0.7,
 })

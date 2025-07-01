@@ -1,103 +1,90 @@
-const service = document.querySelector(".service");
-const downArrow = document.querySelector(".downArrow");
-const creativeApproach = document.querySelector(".creativeApproach");
-const growBusiness = document.querySelector(".growBusiness");
-const text = document.querySelector(".text");
-const bestServices = document.querySelector(".bestServices");
-const rating = document.querySelector(".rating");
-const rgt = document.querySelector(".rgt");
-const dataSection =document.querySelector(".dataSection")
-const creative =document.querySelector(".creative")
-const ourServices =document.querySelector(".ourServices")
+let tl1 = gsap.timeline();
 
-gsap.from(service,{
+tl1.from(".service",{
     y:50,
     duration:1,
     opacity:0
-})
+},"section1")
 
-gsap.from(downArrow,{
+.from(".downArrow",{
     y:-50,
+    opacity:0,
     duration:1,
-    opacity:0
-})
+},"section1")
 
-gsap.from(dataSection,{
-    rotateX: 100,
-    opacity: 0,
-    duration: 2,
-    ease: "power3.out",
-    transformOrigin: "center",
-    scrollTrigger:{
-        trigger:dataSection,
+gsap.from(".dataSection",{
+     opacity: 0,
+    rotateX: 50,
+    scale: 1.1,
+    duration: 1,
+    ease: "easeOutQuad",
+    transformOrigin: "center center",
+
+},"section2")
+
+
+let tl2 = gsap.timeline({
+      scrollTrigger:{
+        trigger:".dataSection",
         scroller:"body",
-        start:"top 97%",
+        start:"top 90%"
     }
-})
+});
 
-gsap.timeline({
-  scrollTrigger: {
-    trigger: rgt, 
-    start: "top 80%",              
-    scroller: "body",                         
-  }
-})
-.from(creativeApproach, {
+
+tl2.from(".creativeApproach",{
   y: 20,
   opacity: 0,
-  duration: 0.5
-})
-.from(growBusiness, {
+  duration: 0.7
+},"section2")
+
+.from(".growBusiness", {
   y: 30,
   opacity: 0,
-  duration: 0.5
+  duration: 0.7
 })
-.from(text, {
+.from(".text", {
   y: 30,
   opacity: 0,
-  duration: 0.5
+  duration: 0.7
 })
-.from(bestServices, {
+.from(".bestServices", {
   y: 30,
   opacity: 0,
-  duration: 0.5
+  duration: 0.7
 })
-.from(rating, {
+.from(".rating", {
   y: 30,
   opacity: 0,
   duration: 0.5
 });
 
+let tl3 = gsap.timeline({
 
-gsap.from(creative,{
-    y:50,
-    opacity:0,
-    duration:1,
-        scrollTrigger:{
-        trigger: creative,
-        scroller:"body",
-        start:"top 90%",
-    }
-})
-
-gsap.from(ourServices,{
-    y:50,
-    opacity:0,
-    duration:1,
-      scrollTrigger:{
-      trigger: creative,
+    scrollTrigger:{
+      trigger: ".creative",
       scroller:"body",
-      start:"top 90%",
-    }
+      start:"top 85%",
+  }
+}
+);
+
+tl3.from(".creative",{
+    y:50,
+    opacity:0,
+    duration:0.7,
+
 })
-gsap.from(".card div",{
+
+.from(".ourServices",{
+    y:50,
+    opacity:0,
+    duration:0.7,
+})
+.from(".card div",{
     y:50,
     opacity:0,
     duration:1,
     stagger:0.1,
-    scrollTrigger:{
-    trigger: ".card div",
-    scroller:"body",
-    start:"top 85%",
-  }
+
 })

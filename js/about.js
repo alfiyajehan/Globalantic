@@ -1,110 +1,117 @@
-const about = document.querySelector(".about");
-const downArrow = document.querySelector(".downArrow");
-const aboutCompany = document.querySelector(".aboutCompany");
-const growBusiness = document.querySelector(".growBusiness");
-const line = document.querySelectorAll(".line");
-const card = document.querySelectorAll(".card");
-const somethingGreat = document.querySelector(".somethingGreat");
-const aboutRgt = document.querySelector(".aboutRgt");
-const aboutImage = document.querySelector(".aboutImage");
-const matter2 = document.querySelector(".matter2");
-const aboutText = document.querySelector(".aboutText");
-const joinButton = document.querySelector(".joinButton");
+let tl1 = gsap.timeline();
 
-
-gsap.from(about,{
+tl1.from(".about",{
     y:50,
     duration:1,
     opacity:0
-})
+},"section1")
 
-gsap.from(downArrow,{
+.from(".downArrow",{
     y:-50,
     duration:1,
     opacity:0
-})
+},"section1")
 
-gsap.from(aboutCompany,{
+.from(".aboutCompany",{
     y:20,
     opacity:0,
     duration:0.5,
 })
 
-gsap.from(growBusiness,{
-    y:15,
+gsap.from(".growBusiness",{
+    y:50,
     opacity:0,
     duration:0.7,
     scrollTrigger:{
-        trigger: growBusiness,
+        trigger: ".growBusiness",
         scroller:"body",
-        start:"top 70%"
+        start:"top 60%"
     }
-})
+},"section2")
 
-gsap.from(".matter1 .line",{
-    y:25,
+let tl2 = gsap.timeline({
+    scrollTrigger:{
+        trigger: "#line1",
+        scroller:"body",
+        start:"top 60%",
+    }
+},"section2");
+
+tl2.from("#line1",{
+    y:50,
     opacity:0,
-    duration:1,
-    stagger:0.4,
-        scrollTrigger:{
-        trigger: ".line",
-        scroller:"body",
-        start:"top 70%"
-    }
+    duration:0.6,
 })
 
-gsap.from(card,{
+.from("#line2",{
+    y:50,
+    opacity:0,
+    duration:0.6,
+})
+.from("#line3",{
+    y:50,
+    opacity:0,
+    duration:0.6,
+})
+.from("#line4",{
+    y:50,
+    opacity:0,
+    duration:0.6,
+})
+
+gsap.from(".card",{
     y:30,
     opacity:0,
     duration:0.5,
-    stagger:0.2,
+    stagger:0.5,
         scrollTrigger:{
-        trigger: card,
+        trigger: ".card",
         scroller:"body",
-        start:"top 76%"
+        start:"top 78%"
     }
 })
 
-gsap.from(somethingGreat,{
+gsap.from(".somethingGreat",{
+    y:20,
     opacity:0,
     duration:1,
         scrollTrigger:{
-        trigger: somethingGreat,
+        trigger: ".somethingGreat",
         scroller:"body",
         start:"top 70%"
     }
 })
 
-gsap.from(aboutRgt,{
-    y:20,
+gsap.from(".aboutRgt",{
+    y:50,
     opacity:0,
-    duration:0.5,
+    duration:0.7,
         scrollTrigger:{
-        trigger: aboutRgt,
+        trigger: ".aboutRgt",
         scroller:"body",
     }
 
 })
 
-gsap.from(aboutImage,{
+gsap.from(".aboutImage",{
     opacity:0,
     duration:0.7,
     delay:0.5,
     scrollTrigger:{
-        trigger: aboutImage,
+        trigger: ".aboutImage",
         scroller:"body",
         start:"top 70%"
     }
 })
 
-gsap.from(matter2,{
+gsap.from(".matter2",{
     y:50,
     opacity:0,
     duration:0.5,
         scrollTrigger:{
-        trigger: matter2,
+        trigger: ".matter2",
         scroller:"body",
-        start:"top 50%",
+        start:"top 70%",
     }
 })
 
@@ -116,31 +123,28 @@ gsap.from(".abtImg img",{
         scrollTrigger:{
         trigger: ".abtImg img",
         scroller:"body",
-        start:"top 50%", 
+        start:"top 60%"
     }
 })
 
-gsap.from(aboutText,{
+let tl3 = gsap.timeline({
+        scrollTrigger:{
+        trigger: ".aboutText",
+        scroller:"body",
+        start:"top 85%"
+    }
+});
+tl3.from(".aboutText",{
     y:50,
     opacity:0,
-    duration:0.5,
+    duration:0.7,
     stagger:0.3,
-        scrollTrigger:{
-        trigger: aboutText,
-        scroller:"body",
-        start:"top 90%", 
-    }
 })
 
-gsap.from(joinButton,{
+.from(".joinButton",{
     y:50,
     opacity:0,
-    duration:0.5,
-        scrollTrigger:{
-        trigger: joinButton,
-        scroller:"body",
-        start:"top 83%", 
-    }
+    duration:0.7,
 })
 
 

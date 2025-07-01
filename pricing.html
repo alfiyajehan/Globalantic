@@ -54,8 +54,8 @@
             <img class='object-contain' src="./images/pricing.png" alt="">
         </div>
 
-        <div class="packageSection flex flex-col justify-center items-center pt-3">
-            <h2 class="pricingPackage bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-13 py-2 w-fit text-xl font-semibold mb-8">
+        <div class="flex flex-col justify-center items-center pt-3">
+            <h2 class="packageSection bg-gradient-to-r from-[#722FE2] via-[#7B16EC] to-white  text-white rounded-3xl px-13 py-2 w-fit text-xl font-semibold mb-8">
                 Package Pricing
             </h2>
             <h2 class="pricingPackage flex flex-col justify-center items-center py-10">
@@ -220,34 +220,37 @@
             <h2 class="heading bg-gradient-to-r from-[#722FE2] via-[#7B16EC] text-white rounded-3xl px-15 py-2 w-fit text-xl font-semibold mt-[3em] relative left-1/2 -translate-x-1/2 ">
                 REQUEST QUOTE
             </h2>
+            <div class="heading">
+                <h2 class="mt-13 mb-4 text-5xl font-semibold relative text-center text-[#293349]">
+                    Request a personalized
+                </h2>
+        
+                <h2 class="mb-30 text-5xl font-semibold relative text-center text-[#293349]">
+                    quote here
+                </h2>
+
+            </div>
     
-            <h2 class="heading mt-13 mb-4 text-5xl font-semibold relative text-center text-[#293349]">
-                Request a personalized
-            </h2>
-    
-            <h2 class="heading mb-30 text-5xl font-semibold relative text-center text-[#293349]">
-                quote here
-            </h2>
         </div>
 
         
         <!-- form section -->
         <div>
             <form action="">
-                <div class="flex justify-start px-[7%] items-center gap-[4em] text-[#293349]">
-                    <div class="name flex flex-col w-1/2 ">
+                <div class="row flex justify-start px-[7%] items-center gap-[4em] text-[#293349]">
+                    <div class="flex flex-col w-1/2 ">
                         <label class="text-xl font-bold" for="name">Enter your full name</label>
                         <input class="w-full bg-[#F7EFFF]  px-4 py-3 rounded-xl my-7 border-b-2 border-[#722FE2] text-md" type="text" id="name" placeholder="What's your good name?">
                     </div>
 
-                    <div class="email flex flex-col w-1/2 text-[#293349]">
+                    <div class="flex flex-col w-1/2 text-[#293349]">
                         <label class="text-xl font-bold" for="email">Email address</label>
                         <input id="email" class="w-full bg-[#F7EFFF] px-4 py-3 rounded-xl  my-7 border-b-2 border-[#722FE2] text-md" type="text" placeholder="Enter your email address">
                     </div>
                 </div>
 
                 <!-- textarea -->
-                <div class="message flex flex-col justify-center mt-7 text-[#293349]">
+                <div class="row flex flex-col justify-center mt-7 text-[#293349]">
                     <label for="text" class="text-xl font-bold ml-25 mb-7">Message</label>
                     <textarea 
                     class="bg-[#F7EFFF] mx-25 px-4 py-3 rounded-xl border-b-2 border-[#722FE2] resize-none text-md"  
@@ -260,7 +263,7 @@
 
             </form>
             <!-- button -->
-            <div class="flex justify-center items-center mt-7 text-xl">
+            <div class="btn flex justify-center items-center mt-7 text-xl">
                 <button class="requestQuote py-1 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-4 cursor-pointer align-middle text-md transition-colors duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC] mt-10">
                     <span class="text-lg pl-4">
                         Request a quote

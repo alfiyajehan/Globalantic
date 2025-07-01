@@ -1,72 +1,66 @@
-const about = document.querySelector(".pricing");
-const downArrow = document.querySelector(".downArrow");
-const card1 = document.querySelector(".card1");
-const card2 = document.querySelector(".card2");
-const card3 = document.querySelector(".card3");
-const name = document.querySelector(".name");
-const email = document.querySelector(".email");
-const message = document.querySelector(".message");
-const requestQuote = document.querySelector(".requestQuote");
-const pricingImage = document.querySelector(".pricingImage");
-const serviceSection = document.querySelector(".serviceSection");
+let tl1 = gsap.timeline();
 
-
-gsap.from(about,{
+tl1.from(".pricing",{
     y:50,
     duration:1,
     opacity:0
-})
+},"section1")
 
-gsap.from(downArrow,{
+.from(".downArrow",{
     y:-50,
     duration:1,
     opacity:0
-})
+},"section1")
 
-gsap.from(".packageSection .pricingPackage",{
+.from(".packageSection",{
     y:50,
     opacity:0,
-    duration:1,
-    stagger:0.5
+    duration:0.7,
 })
 
-gsap.from(card1,{
+gsap.from(".pricingPackage",{
+    y:50,
+    opacity:0,
+    duration:0.7,
+    scrollTrigger:{
+    trigger: ".pricingPackage",
+    scroller:"body",
+    start:"top 79%"
+    }
+
+})
+
+let tl2 = gsap.timeline({
+    scrollTrigger:{
+    trigger: ".card1",
+    scroller:"body",
+    start:"top 74%",
+}
+});
+tl2.from(".card1",{
     x:40,
     opacity:0,
     duration:1,
-        scrollTrigger:{
-        trigger: card1,
-        scroller:"body",
-        start:"top 70%",
-    }
-})
 
-gsap.from(card2,{
+},"card")
+
+.from(".card2",{
     opacity:0,
     duration:1,
-        scrollTrigger:{
-        trigger: card1,
-        scroller:"body",
-        start:"top 70%",
-    }
-})
 
-gsap.from(card3,{
+},"card")
+
+.from(".card3",{
     x:-40,
     opacity:0,
     duration:0.7,
-        scrollTrigger:{
-        trigger: card1,
-        scroller:"body",
-        start:"top 70%",
-    }
-})
+},"card")
 
 gsap.from(".matterSection .heading",{
     y:50,
     opacity:0,
     duration:0.7,
-    stagger:0.4,
+    stagger:0.5,
         scrollTrigger:{
         trigger: ".matterSection .heading",
         scroller:"body",
@@ -74,75 +68,47 @@ gsap.from(".matterSection .heading",{
     }
 })
 
-
-gsap.from(".name",{
-    y:50,
-    opacity:0,
-    duration:0.7,
-    stagger:0.4,
+let tl3 = gsap.timeline({
         scrollTrigger:{
-        trigger: ".name",
+        trigger: ".row",
         scroller:"body",
         start:"top 65%",
     }
-})
-
-gsap.from(".email",{
+});
+tl3.from(".row",{
     y:50,
     opacity:0,
     duration:0.7,
-    stagger:0.4,
-        scrollTrigger:{
-        trigger: ".email",
-        scroller:"body",
-        start:"top 65%",
-    }
+    stagger:0.5
+
 })
 
-gsap.from(".message",{
+.from(".btn",{
     y:50,
     opacity:0,
     duration:0.7,
-    stagger:0.4,
+
+})
+
+gsap.from(".pricingImage",{
+    opacity:0,
+    duration:1,
+    delay:0.4,
         scrollTrigger:{
-        trigger: ".message",
+        trigger: ".pricingImage",
         scroller:"body",
-        start:"top 63%",
+        start:"top 61%"
     }
 })
 
-gsap.from(requestQuote,{
-    y:50,
+gsap.from(".serviceSection",{
+    y:10,
     opacity:0,
-    duration:0.7,
-    stagger:0.4,
-        scrollTrigger:{
-        trigger: requestQuote,
-        scroller:"body",
-        start:"top 63%",
-    }
-})
-
-gsap.from(pricingImage,{
-    opacity:0,
-    duration:0.7,
+    duration:0.9,
     stagger:0.4,
     delay:0.4,
         scrollTrigger:{
-        trigger: pricingImage,
-        scroller:"body",
-        start:"top 61%",
-    }
-})
-
-gsap.from(serviceSection,{
-    y:40,
-    opacity:0,
-    duration:0.7,
-    stagger:0.4,
-    delay:0.4,
-        scrollTrigger:{
-        trigger: serviceSection,
+        trigger: ".serviceSection",
         scroller:"body",
         start:"top 61%",
     }

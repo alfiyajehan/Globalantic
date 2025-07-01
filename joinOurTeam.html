@@ -12,20 +12,21 @@
     <!-- linking css style -->
     <link rel="stylesheet" href="./css/style.css">
 
-    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
 </head>
 <body>
     <div class="w-full font-[jakarta]">
         <div class="w-11/12 mx-auto">
 
             <!-- navbar -->
-            <nav class="w-full py-2 flex justify-between items-center">
-                <h1 class="font-[sansation] font-semibold text-[2vw] flex justify-center items-center gap-1">
+            <nav class="w-full py-2 flex justify-between items-center px-4 md:px-0">
+                <h1 class="font-[sansation] font-semibold text-2xl md:text-[2vw] flex justify-center items-center gap-1">
                     <img src="./images/icon.png" alt="">
                     Globalantic
                 </h1>
 
-                <div class="text-lg font-semibold flex gap-7">
+                <div class="text-lg font-semibold gap-7 hidden md:flex">
                     <a href="/index.html">Home</a>
                     <a href="/about.html">About</a>
                     <a href="/pricing.html">Pricing</a>
@@ -34,9 +35,12 @@
                     <a href="/joinOurTeam.html">Career</a>
                     <a href="/contact.html">Contact</a>
                 </div>
-
-                <button class="py-1 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-4 cursor-pointer align-middle text-md transition-colors duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
-                    <span class="text-lg pl-4">
+                
+                <div class="h-8 md:hidden">
+                    <i class="ri-menu-line text-2xl"></i>
+                </div>
+                <button class="py-1 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full items-center justify-around gap-4 cursor-pointer align-middle text-md transition-colors duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC] hidden md:flex">
+                    <span class="text-lg pl-4 ">
                         Free Consulation
                     </span>
                     <div class="w-11 h-11 bg-white rounded-full p-1 flex justify-center items-center mr-1">
@@ -49,61 +53,62 @@
 
         <!-- top image section -->
         <div class="relative w-[98vw] mx-auto mb-[4em]">
-            <h2 class="joinOurTeam text-white font-semibold absolute font left-1/2 top-1/2 -translate-1/2 text-7xl">Join our team</h2>
-            <img class='downArrow absolute bottom-4 left-1/2 -translate-x-1/2' src="./images/downArrow.png" alt="">
-            <img class='object-contain' src="./images/joinOurTeam.png" alt="">
+            <h2 class="about text-white font-semibold absolute font left-1/2 top-1/2 -translate-1/2 text-2xl md:text-7xl">Join our team</h2>
+            <img class='downArrow absolute bottom-4 w-2 md:w-4 left-1/2 -translate-x-1/2' src="./images/downArrow.png" alt="">
+            <img class='object-cover w-full h-full hidden md:block' src="./images/joinOurTeam.png" alt="">
+            <img class='object-contain w-full h-full md:hidden' src="./images/joinourteam-mob.png" alt="">
         </div>
 
-        <h2 class="joinTheTeam text-center text-6xl font-bold text-[#293349] m-20">Join the team</h2>
+        <h2 class="joinTheTeam text-center text-3xl md:text-6xl font-bold text-[#293349] m-20">Join the team</h2>
 
         <!-- image section -->
-         <div class="flex gap-12 justify-center my-15">
+         <div class="flex md:flex-row flex-col items-center md:items-start gap-12 justify-center my-15">
             <div class="cards">
                 <img src="images/Group 146.png" alt="">
             </div>
             <div class="cards">
                 <img src="images/man (2).png" alt="">
             </div>
-            <div class="cards">
+            <div class="cards hidden md:block">
                 <img src="images/man (2).png" alt="">
             </div>
-            <div class="cards">
+            <div class="cards hidden md:block">
                 <img src="images/man (2).png" alt="">
             </div>
          </div>
 
-        <h2 class="requestQuote bg-gradient-to-r from-[#722FE2] via-[#7B16EC] text-white rounded-3xl px-15 py-2 w-fit text-xl font-semibold mt-[5em] mb-12 relative left-1/2 -translate-x-1/2">
+        <h2 class="requestQuote bg-gradient-to-r from-[#722FE2] via-[#7B16EC] text-white rounded-3xl px-15 py-2 w-fit text-sm md:text-xl font-semibold mt-[5em] mb-12 relative left-1/2 -translate-x-1/2">
             REQUEST QUOTE
         </h2> 
-        <h2 class="stepAhead text-6xl font-bold text-[#293349] text-center mb-6 mt-15">
+        <h2 class="stepAhead text-3xl md:text-6xl font-bold text-[#293349] text-center md:mb-6 mt-15">
             You are a step ahead
         </h2>
-        <h2 class="team text-6xl font-bold text-[#293349] text-center mb-[2em]">
+        <h2 class="team text-3xl md:text-6xl font-bold text-[#293349] text-center mb-[2em]">
             to join the team
         </h2>
 
         <!-- form section -->
         <div>
             <form action="">
-                <div class="row1 flex justify-start px-[7%] items-center gap-[4em] text-[#293349]">
-                    <div class="name flex flex-col w-1/2 ">
+                <div class="row1 flex md:flex-row flex-col justify-start px-[7%] items-center gap-5 md:gap-[4em] text-[#293349]">
+                    <div class="name flex flex-col w-full md:w-1/2">
                         <label class="text-xl font-bold" for="name">Enter your full name</label>
                         <input class="w-full bg-[#F7EFFF] px-4 py-3 rounded-xl my-7  border-b-2 border-[#722FE2] text-md" type="text" id="name" placeholder="What's your good name?">
                     </div>
 
-                    <div class="email flex flex-col w-1/2">
+                    <div class="email flex flex-col w-full md:w-1/2">
                         <label class="text-xl font-bold" for="email">Email address</label>
                         <input id="email" class="w-full bg-[#F7EFFF] px-4 py-3 rounded-xl my-7 border-b-2 border-[#722FE2] text-md" type="text" placeholder="Enter your email address">
                     </div>
                 </div>
 
-                <div class="row2 flex justify-start px-[7%] items-center gap-[4em] mt-5 text-[#293349]">
-                    <div class="phoneNumber flex flex-col w-1/2 ">
+                <div class="row2 flex md:flex-row flex-col justify-start px-[7%] items-center gap-5 md:gap-[4em] mt-5 text-[#293349]">
+                    <div class="phoneNumber flex flex-col w-full md:w-1/2">
                         <label class="no-spinner text-xl font-bold" for="phoneNumber">Phone number</label>
                         <input class="w-full bg-[#F7EFFF] px-4 py-3 rounded-xl  my-7 border-b-2 border-[#722FE2] text-md" type="tel" id="phoneNumber" placeholder="Enter your phone number">
                     </div>
 
-                    <div class="resume flex flex-col w-1/2">
+                    <div class="resume flex flex-col w-full md:w-1/2">
                         <label class="text-xl font-bold" for="resume">Resume</label>
                         <label for="resume" class="w-full bg-[#F7EFFF] px-4 py-3 my-7 rounded-xl flex items-center border-b-2 border-[#722FE2] text-gray-500 cursor-pointer text-md">
                             Drop your resume here ...
@@ -114,9 +119,9 @@
 
                 <!-- textarea -->
                 <div class="coverMessage flex flex-col justify-center mt-5 text-[#293349]">
-                    <label for="text" class="text-xl font-bold ml-25 mb-7 ">Cover Message</label>
+                    <label for="text" class="text-xl font-bold ml-25 mb-7">Cover Message</label>
                     <textarea 
-                    class="bg-[#F7EFFF] mx-25 px-4 py-3 rounded-2xl border-b-2 border-[#722FE2] resize-none text-md"  
+                    class="bg-[#F7EFFF] mx-6 md:mx-25 px-4 py-3 h-[40vh] md:h-fit rounded-2xl border-b-2 border-[#722FE2] resize-none text-md"  
                     name="text" 
                     id="text" 
                     placeholder="Write your message here ...." 
@@ -126,12 +131,12 @@
 
             </form>
             <!-- button -->
-            <div class="button flex justify-center items-center mt-15 mb-40 pt-10 py-20">
+            <div class="button flex justify-center items-center mt-15 md:mb-40 pt-10 py-20">
                 <button class="py-2 bg-gradient-to-r from-[#7B16EC] to-[#362F62] text-white font-semibold rounded-full flex items-center justify-around gap-10 cursor-pointer align-middle text-lg transition-all duration-200 ease-in-out hover:from-[#362F62] hover:to-[#7B16EC]">
-                    <span class="text-2xl pl-8 ">
+                    <span class="text-lg md:text-2xl pl-8 ">
                         Join Our Team
                     </span>
-                    <div class="w-16 h-16 bg-white rounded-full p-1 flex justify-center items-center mr-2">
+                    <div class="w-12 md:w-16 h-12 md:h-16 bg-white rounded-full p-1 flex justify-center items-center mr-2">
                         <img src="./images/arrow.png" alt="">
                     </div>
                 </button>
@@ -139,19 +144,19 @@
          </div>
 
         <!-- footer -->
-        <footer class="w-full mx-auto bg-black text-white px-32 flex flex-col gap-10 rounded-tr-3xl rounded-tl-3xl">
+        <footer class="w-full mx-auto bg-black text-white px-8 md:px-32 flex flex-col gap-10 rounded-tr-3xl rounded-tl-3xl">
             <div class="flex flex-col gap-2 justify-center items-center py-6">
-                <h1 class="font-[sansation] font-semibold text-[2vw] flex justify-center items-center gap-1">
+                <h1 class="font-[sansation] font-semibold text-3xl md:text-[2vw] flex justify-center items-center gap-1">
                     <img src="./images/icon.png" alt="">
                     Globalantic
                 </h1>
-                <p class="text-lg font-light">
+                <p class="text-lg w-[80%] md:w-full md:text-lg text-center font-light">
                     Office No. 582, Near Market, Bhopal
                 </p>
             </div>
-            <div class="flex justify-between items-center">
+            <div class="flex md:flex-row flex-col gap-12 md:gap-8 justify-between items-start md:items-center">
                 <div class="flex flex-col gap-3">
-                    <h2 class="text-4xl font-semibold mb-2">Quick Links</h2>
+                    <h2 class="text-2xl md:text-4xl font-semibold mb-2">Quick Links</h2>
                     <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/index.html">Home</a>
                     <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/about.html">About</a>
                     <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">Industries</a>
@@ -159,8 +164,8 @@
                     <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">Career</a>
                     <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/contact.html">Contact</a>
                 </div>
-                <div class="flex flex-col gap-3 w-1/5">
-                    <h2 class="text-4xl font-semibold mb-2">Services</h2>
+                <div class="flex flex-col gap-3 w-full md:w-1/5">
+                    <h2 class="text-2xl md:text-4xl font-semibold mb-2">Services</h2>
                     <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="/webdev.html">Website Development</a>
                     <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">CRM</a>
                     <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">AI Automation</a>
@@ -168,12 +173,12 @@
                     <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">SEO</a>
                     <a class="text-lg font-light hover:font-medium duration-100 transition-all ease-linear" href="">Designing</a>
                 </div>
-                <div class="w-1/4 relative">
-                    <img class="w-full" src="./images/home-bot.png" alt="">
-                    <img class="w-24 absolute left-0 top-14 custom-spin" src="./images/bot-ball.png" alt="">
+                <div class="w-full md:w-1/4 relative">
+                    <img class="w-[90%] md:w-full" src="./images/home-bot.png" alt="">
+                    <img class="w-18 md:w-24 absolute left-0 top-14 custom-spin" src="./images/bot-ball.png" alt="">
                 </div>
             </div>
-            <div class="flex justify-center mt-4 items-center py-8 text-lg text-zinc-300">
+            <div class="flex justify-center mt-4 items-center py-10 md:py-8 text-xs text-center md:text-lg text-zinc-300">
                 @ Copyright  2025, Globalantic -Services & Products
             </div>
         </footer>
