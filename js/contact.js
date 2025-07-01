@@ -59,7 +59,7 @@ tl3.from("#text1",{
     duration:0.6,
 })
 
-.from(".infoSection .infoCol",{
+gsap.from(".infoSection .infoCol",{
     y:100,
     opacity:0,
     duration:0.7,

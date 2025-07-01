@@ -97,7 +97,6 @@ gsap.from(".young-brains-head", {
     duration: .4,
     ease: "power1.out",
     scrollTrigger: {
-        markers: true,
         scroller: ".main",
         trigger: ".young-team",
         start: "top 0%",
